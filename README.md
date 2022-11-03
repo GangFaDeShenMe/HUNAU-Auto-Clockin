@@ -1,5 +1,7 @@
-# HUNAU-Auto-Clockin
-基于 python3 的湖南农业大学自动打卡脚本
+# HUNAU-Auto-Clockin  
+湘农打卡小助手  
+
+一个基于 python3 的湖南农业大学自动打卡脚本
 
 ## 安装方法：
 1. 下载安装 python3  
