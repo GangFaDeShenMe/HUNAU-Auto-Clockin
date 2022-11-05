@@ -278,7 +278,7 @@ def submit(sID, sIdDict):
                      "xgym1"        : '',
                      "hsjc"         : '',
                      "hsjc1"        : '',
-                     "bz"           : sIdDict["是否在校"],
+                     "bz"           : sIdDict["备注"],
                      "operationType": "Create",
                      "dm"           : ''
                   }
