@@ -98,7 +98,10 @@ def main(argv):
            for line in i:
                if line[0] != '#' and line[0] != '\n' and line[0] != ' ' and line[0] != '\t':
                   ID, pwd, sAddr, sDetailedAddr, sPhoneNo, sPresentStatus, sNote = line.rstrip().split(' ')
-                  loginDict[ID] = {"密码" : pwd, "省市地址" : sAddr, "详细地址" : sDetailedAddr, "联系电话" : sPhoneNo, "是否在校" : sPresentStatus, "备注" : sNote}
+                  loginDict[ID] = {"密码" : pwd, "省市地址" : sAddr, "详细地址" : sDetailedAddr, "联系电话" : sPhoneNo, "是否在校(Y/N)" : sPresentStatus, "备注" : sNote}
+                  if sPresentStatus == 'y' or sPresentStatus == 'Y':
+                      loginDict[ID]["是否在校"] = "在校"
+                  else: loginDict[ID]["是否在校"] = "不在校"
 
            printf(t() + "读取输入文件成功")
            i.close()
