@@ -9,6 +9,9 @@ def t():
 def ts():
     return str(round(time.time() * 1000))
 
+# 操作间隔时间
+waitSec = 1
+
 def printf(str): # 根据 stdout 变量的情况选择是输出到 stdout 还是输出到指定的文件
     if stdout: print(str)
     else: log.write(str + '\n')
@@ -160,7 +163,7 @@ def main(argv):
        if stdout == False : print("重导向输出至文件")
 
    for sID in loginDict:
-       time.sleep(3)
+       time.sleep(waitSec)
        submit(sID, loginDict[sID])
 
    if stdout == False:
@@ -207,7 +210,7 @@ def submit(sID, sIdDict):
     cookie = loginGet.cookies # 取得 Cookie （会话 ID）
 
     if loginGet.ok:
-       time.sleep(2)
+       time.sleep(waitSec)
        loginPost = requests.post(url + "website/login", data = (('uname', sID), ('pd_mm', hunauEncrypt(sIdDict["密码"]))), cookies = cookie)
        # 提交登录请求
 
@@ -221,7 +224,7 @@ def submit(sID, sIdDict):
 
              printf(t() + "学号 " + sID + " 登录成功。")
 
-             time.sleep(2)
+             time.sleep(waitSec)
              dkGet = requests.get(url + "wap/menu/student/temp/zzdk/_child_/edit?_t_s_=" + ts(), cookies = cookie, headers = header)
              # 访问打卡页面
 
@@ -286,7 +289,7 @@ def submit(sID, sIdDict):
                      "dm"           : ''
                   }
  
-                  time.sleep(2)
+                  time.sleep(waitSec)
                   dkPost = requests.post(url + "content/student/temp/zzdk?_t_s_=" + ts(), cookies = cookie, headers = header, data = dkForm)
                   # 提交打卡请求
 
