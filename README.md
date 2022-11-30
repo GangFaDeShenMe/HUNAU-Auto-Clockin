@@ -71,17 +71,17 @@
     chromedriver --version
     ```
 
-5. 下载脚本
+5. 下载脚本  
    -对于 Windows ，直接从 releases 里下载解压到你喜欢的地方。  
    
-   -对于 Linux ，以 root 执行以下命令: 
+   -对于 Linux ，以 root 执行以下命令:  
     ```
     cd /root/
     git clone https://github.com/GangFaDeShenMe/HUNAU-Auto-Clockin.git
     ```
 
-6. 安装字体
-   -对于 Windows ，直接双击 `pf_r.ttf` 点击安装即可。  
+6. 安装字体  
+   -对于 Windows ，直接双击 `pf_r.ttf` 点击安装即可。    
      
    -对于 Linux ，执行以下命令：  
     ```
