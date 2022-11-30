@@ -29,7 +29,7 @@ def main(argv):
          print('      -r [打卡失败时的重试次数，默认为 5]')
          print('      -s [输入 Y 保存，输入其他取消。保存生成的健康码，默认为不保存]')
          print('      -h (显示用法)')
-         print('湘农打卡小助手 V1.1 -GangFaDeShenMe')
+         print('湘农打卡小助手 V2.0 -GangFaDeShenMe')
          sys.exit(0)
       elif opt in ("-i", "--ifile"):
          dkConfig.inputFile = arg
