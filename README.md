@@ -1,7 +1,13 @@
 # HUNAU-Auto-Clockin  
 湘农打卡小助手  
 
-一个基于 python3 的湖南农业大学自动打卡脚本。  
+一个基于
+* python3
+* requests
+* selenium
+* chrome
+* 某位众所周知的大佬的健康码模拟项目  
+的湖南农业大学自动打卡脚本。  
 
 支持：
 * 完全自动打卡，只需一次性设定
