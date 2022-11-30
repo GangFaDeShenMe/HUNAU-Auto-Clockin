@@ -37,7 +37,7 @@
     https://www.google.cn/chrome/  
     ```
      
-   -对于 Linux ，以 root 执行以下命令:  
+   -对于 Debian 系 Linux ，以 root 执行以下命令:  
     ```
     cd /root/
     mkdir chrome && cd ./chrome  
