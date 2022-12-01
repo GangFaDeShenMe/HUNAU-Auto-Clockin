@@ -21,7 +21,7 @@
    ```
    https://www.python.org/downloads/
    ```
-2. 安装 python库 request, requests-toolbelt, selenium  
+2. 安装 python库 requests, requests-toolbelt, selenium  
     
    打开 bash 或 powershell 输入  
    ```
