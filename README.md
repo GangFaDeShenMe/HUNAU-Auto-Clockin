@@ -126,7 +126,7 @@
    ```
    在文件末新增如下代码，记得把路径改成实际路径。    
    ```
-   0 0 * * * DISPLAY=:0 python3 /root/HUNAU-Auto-Clockin/dk.py -i /root/HUNAU-Auto-Clockin/input.txt -o /root/HUNAU-Auto-Clockin/output.txt  
+   0 0 * * *  cd /root/HUNAU-Auto-Clockin/ && python3 /root/HUNAU-Auto-Clockin/dk.py -i /root/HUNAU-Auto-Clockin/input.txt -o /root/HUNAU-Auto-Clockin/output.txt  
    ```
    依次按 `Ctrl+X` `Y` `Enter` 来保存设置。  
-   如上设置表示在每天的零点自动执行 `DISPLAY=:0 python3 /root/HUNAU-Auto-Clockin/dk.py -i /root/HUNAU-Auto-Clockin/input.txt -o /root/HUNAU-Auto-Clockin/output.txt` 命令。
+   如上设置表示在每天的零点自动执行 `cd /root/HUNAU-Auto-Clockin/ && python3 /root/HUNAU-Auto-Clockin/dk.py -i /root/HUNAU-Auto-Clockin/input.txt -o /root/HUNAU-Auto-Clockin/output.txt` 命令。
