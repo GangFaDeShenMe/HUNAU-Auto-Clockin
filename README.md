@@ -67,8 +67,7 @@
     unzip ./chromedriver_linux64.zip && rm ./chromedriver_linux64.zip
     chmod +x ./chromedriver
     mv chromedriver /usr/local/share/chromedriver
-    ln -s /usr/local/share/chromedriver /usr/bin/chromedriver
-    chromedriver --version
+    ln -s /usr/local/share/chromedriver /usr/bin/chromedriver  
     ```
 
 5. 下载脚本  
